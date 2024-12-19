@@ -294,8 +294,8 @@ main::-webkit-scrollbar {
 .next-prev {
   display: flex;
   justify-content: space-between;
-  margin-top: auto;
-  padding-inline: 2.9rem;
+  margin-top: 2rem;
+
 }
 
 .nav-button {
@@ -332,8 +332,6 @@ main::-webkit-scrollbar {
   margin-top: 1rem;
   font-size: 0.8rem;
   color: gray;
-  padding-inline: 2.9rem;
-  padding-bottom: 2rem;
 }
 
 .footer {

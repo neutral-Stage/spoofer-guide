@@ -1,3 +1,4 @@
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -6,7 +7,7 @@ const page = () => {
       <nav>
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <a className="underline-offset-2 decoration-primary/6 text-primary hover:text-primary-700 transition-colors no-underline hover:underline text-xs tracking-wide font-semibold uppercase flex items-center gap-1" href="/spoofer/2-setup">2# Setup</a>
+            <a className="underline-offset-2 decoration-primary/6 text-primary hover:text-primary-700 transition-colors no-underline hover:underline text-xs tracking-wide font-semibold uppercase flex items-center gap-1" href="2-setup">2# Setup</a>
           </li>
         </ol>
       </nav>
@@ -140,15 +141,11 @@ const page = () => {
         </div>
       </div>
     </div>
-    <div className="flex flex-col md:flex-row mt-6 gap-2 max-w-3xl mx-auto page-api-block:ml-0">
-      <a className="group text-sm p-2.5 flex gap-4 flex-1 flex-row-reverse items-center pl-4 border border-dark/3 rounded straight-corners:rounded-none hover:border-primary/6 dark:border-light/2 text-pretty dark:hover:border-primary-300/4 md:p-4 md:text-base" href="/spoofer/1-windows-steps/windows-setup"><span className="flex flex-col flex-1 text-right"><span className="text-xs">Previous</span><span className="text-dark dark:text-light/6 group-hover:text-primary line-clamp-2">Windows Setup</span></span><svg className="gb-icon hidden size-4 text-dark/5 group-hover:text-primary dark:text-light/4 md:block" style={{"maskImage":"url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/chevron-left.svg?v=2&token=a463935e93')","maskRepeat":"no-repeat","maskPosition":"center center"}} /></a><a className="group text-sm p-2.5 flex gap-4 flex-1 flex-row items-center pr-4 border border-dark/3 rounded straight-corners:rounded-none hover:border-primary/6 dark:border-light/2 text-pretty dark:hover:border-primary-300/4 md:p-4 md:text-base" href="/spoofer/2-setup/disable-windows-updates"><span className="flex flex-col flex-1"><span className="text-xs">Next</span><span className="text-dark dark:text-light/6 group-hover:text-primary line-clamp-2">Disable Windows Updates</span></span><svg className="gb-icon hidden size-4 text-dark/5 group-hover:text-primary dark:text-light/4 md:block" style={{"maskImage":"url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/chevron-right.svg?v=2&token=a463935e93')","maskRepeat":"no-repeat","maskPosition":"center center"}} /></a>
-    </div>
-    <div className="flex flex-row items-center mt-6 max-w-3xl mx-auto page-api-block:ml-0">
-      <p className="flex-1 text-sm text-dark/6 dark:text-light/5">
-        Last updated
-        <time data-visual-test="transparent" dateTime="2024-04-01T23:28:51.068Z" title="02/04/2024, 05:28:51">8 months ago</time>
-      </p>
-    </div>
+    <div className="next-prev">
+          <Link href="/1-windows-steps/windows-setup" className="nav-button" id="prev-button">&larr; Previous</Link>
+          <Link href="/2-setup/disable-windows-updates" className="nav-button" id="next-button">Next &rarr;</Link>
+      </div>
+      <div className="last-updated">Last updated 5 months ago</div>
   </main>
   )
 }
