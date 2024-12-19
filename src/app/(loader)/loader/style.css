@@ -1,0 +1,199 @@
+:root{
+    --red: #FD0606;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+    font-family: "Kanit", sans-serif;
+  }
+  .night-sky {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: 1;
+      padding: 0;
+      margin: 0;
+      pointer-events: none;
+      mix-blend-mode: screen;
+    }
+
+    .star {
+      position: absolute;
+      background: white;
+      border-radius: 50%;
+      pointer-events: none;
+      animation: shoot 20s linear infinite; /* Slowed down animation */
+    }
+
+    @keyframes shoot {
+      0% {
+        transform: translate(0, 0) scale(0.1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(var(--x), var(--y)) scale(2);
+        opacity: 0;
+      }
+    }
+  .login{
+      padding: 1rem;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      z-index: 2;
+  }
+  .container {
+    position: relative;
+    opacity: 1;
+    transform: none;
+    max-width: 28rem;
+    width: 100%;
+  }
+  .card{
+      position: relative; 
+      border-radius: 0.75rem; 
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+      border: 2px solid rgba(253,6,6,.2);
+      background-color: rgba(17,24,39,.8);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .title {
+      color: #FD0606;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+  }
+  .subtitle {
+      color: rgb(156, 163, 175);
+      margin-bottom: 1rem;
+      font-size: .875rem;
+      line-height: 1.25rem;
+  }
+
+  .license-key {
+      display: flex; 
+      height: 2rem;
+      width: 86.6%; 
+      padding: .25rem .75rem .25rem 2.5rem;
+      font-size: 1rem;
+      line-height: 1.5rem; 
+      color: #ffffff; 
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms; 
+      transition-duration: 300ms; 
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+      border: 1px solid rgba(253,6,6,.2);
+      background-color: rgba(31, 41, 55, .5);
+  }
+  .button-container {
+  padding-top: 0;
+  padding-inline: 1.5rem;
+  align-items: center;
+  display: flex;
+
+}
+.input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+  .button {
+    background-color: #FD0606;
+    border: none;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    width: 88%;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: .875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+    cursor: pointer;
+    height: 2.5rem;
+    animation-duration: .3s;
+    transition-duration: .3s;
+    transition-property: all;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+    
+  }
+  .red-shadow{
+     border-radius: 9999px;
+     background-color: rgba(253,6,6,.2);
+     inset: 0;
+     position: absolute;
+     pointer-events: none;
+     filter: blur(64px);
+     transform: matrix(1, 0, 0, 1, 0, -142);
+  }
+  .lucide{
+      width: 3rem; 
+height: 3rem; 
+color: #FD0606;
+  }
+  .lucide-key-round{
+
+      color: rgb(107 114 128);
+  width: 1.25rem;
+  height: 1.25rem;
+  top: .625rem;
+  left: .75rem;
+  position: absolute;
+  }
+  .button-inner{
+      position: relative;
+      display: flex;
+      align-items: center;
+  }
+  .lucide-download-big{
+      height: 3rem;
+      width: 3rem;
+      color: #FD0606;
+  }
+  .lucide-download{
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  width: 1rem;
+  height: 1rem;
+  margin-right: .5rem;
+  color: #fff;
+  }
+  .lucide-sparkles{
+  flex-shrink: 0;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  width: 1rem;
+  height: 1rem;
+  margin-left: .5rem;
+  color: #fff;
+  }
