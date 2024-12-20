@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+:root {
   --background: linear-gradient(#000000f4, #06080aea);
   --foreground: #e5e7eb;
 }
@@ -33,8 +33,6 @@ body {
   align-items: center;
   padding-inline: 2rem;
 }
-
-
 
 /* Pulsing glow animation */
 @keyframes purplePulse {
@@ -295,7 +293,6 @@ main::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-
 }
 
 .nav-button {

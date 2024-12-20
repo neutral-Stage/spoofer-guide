@@ -1,10 +1,13 @@
+
+
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
+
   return (
     <main
       id="scrollableContent"
-      className="flex-1 relative py-8 lg:px-12 break-anywhere page-api-block:xl:max-2xl:pr-0 page-api-block:max-w-[1654px] page-api-block:mx-auto"
+      className="flex-1 relative py-8 lg:px-12 break-anywhere P-api-block:xl:max-2xl:pr-0 page-api-block:max-w-[1654px] page-api-block:mx-auto"
     >
       <header className="max-w-3xl mx-auto mb-6 space-y-3 page-api-block:ml-0">
         <nav>
@@ -156,4 +159,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

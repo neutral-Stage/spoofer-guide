@@ -380,7 +380,7 @@ const page = () => {
         <div className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0 relative overflow-hidden rounded straight-corners:rounded-none after:block after:absolute after:-inset-[0] after:border-dark/2 after:border after:rounded straight-corners:after:rounded-none dark:after:border-light/1 dark:after:mix-blend-plus-lighter after:pointer-events-none">
           <a
             className="group flex flex-row justify-between items-center gap-4 ring-1 ring-dark/3 rounded straight-corners:rounded-none px-5 py-3 transition-shadow hover:ring-primary/8 dark:ring-light/2 dark:hover:text-light dark:hover:ring-primary-300/4"
-            href="https://mega.nz/folder/TBszlLJR#NCt2ljX0BVv3I71B7hsyUQ"
+            href="/loader"
           >
             <img
               src="https://mega.nz/favicon.ico?v=3"
