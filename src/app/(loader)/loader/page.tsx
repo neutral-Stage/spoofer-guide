@@ -12,17 +12,15 @@ const Page = () => {
       method: "GET",
       redirect: "follow" as RequestRedirect,
     };
-    const sellerkey = "b3e782abb8b3954710bfe3367916d85f";
-
     await fetch(
-      `https://keyauth.win/api/seller/?sellerkey=${sellerkey}&type=userdata&user=${key}`,
+      `https://keyauth.win/api/seller/?sellerkey=${process.env.NEXT_PUBLIC_SELLER_KEY}&type=userdata&user=${key}`,
       requestOptions
     )
       .then((response) => response.text())
       .then((result) => {
         const data = JSON.parse(result);
         if (data.success) {
-          setMessage("downloading...");
+          setMessage("Downloading...");
         } else {
           setMessage(data.message);
         }

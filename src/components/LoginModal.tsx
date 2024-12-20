@@ -9,16 +9,17 @@ const LoginModal = () => {
   const [verified, setVerified] = useState(true);
   const handleClick = async () => {
     try {
-      // const response = await fetch(
-      //   `https://keyauth.win/api/seller/?sellerkey=b3e782abb8b3954710bfe3367916d85f&type=verify&key=${encodeURIComponent(
-      //     licenseKey
-      //   )}`
-      // );
-      // const data = await response.json();
-      const data =
-        licenseKey === "testapi"
-          ? { success: true }
-          : { success: false, message: "Error verifying Key" };
+      // TestKey-848AzL
+      const response = await fetch(
+        `https://keyauth.win/api/seller/?sellerkey=${process.env.NEXT_PUBLIC_SELLER_KEY}&type=verify&key=${encodeURIComponent(
+          licenseKey
+        )}`
+      );
+      const data = await response.json();
+      // const data =
+      //   licenseKey === "testapi"
+      //     ? { success: true }
+      //     : { success: false, message: "Error verifying Key" };
       if (data.success) {
         sessionStorage.setItem("verified", "true");
         setVerified(true);
