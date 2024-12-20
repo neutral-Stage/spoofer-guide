@@ -891,7 +891,7 @@ const page = () => {
         </ol>
       </div>
       <div className="next-prev">
-        <Link href="#" className="nav-button disabled" id="prev-button">
+        <Link href="/" className="nav-button" id="prev-button">
           Previous
         </Link>
         <Link

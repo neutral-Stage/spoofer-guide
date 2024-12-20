@@ -7,9 +7,7 @@ import Link from "next/link";
 import { type ParentMenuItem } from "./Sidebar";
 
 const SidebarMenu = ({ parent }: { parent: ParentMenuItem }) => {
-  const getpathname = usePathname();
-  const pathname =
-    getpathname === "/" ? "/1-windows-steps/windows-reinstall" : getpathname;
+  const pathname = usePathname();
   const [subMenuOpen, setSubMenuOpen] = useState(
     pathname.includes(parent.path) ? true : false
   );
@@ -24,7 +22,7 @@ const SidebarMenu = ({ parent }: { parent: ParentMenuItem }) => {
       <button
         type="button"
         onClick={toggleSubMenu}
-        className={`w-full py-2 rounded-md flex items-center justify-between transition-all duration-300 ease-in-out ${
+        className={`w-full py-2 mb-2 rounded-md flex items-center justify-between transition-all duration-300 ease-in-out ${
           pathname.includes(parent.path)
             ? "text-gray-300 bg-primary"
             : "text-gray-200 hover:bg-primary"

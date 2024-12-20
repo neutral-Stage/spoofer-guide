@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import SidebarMenu from "./SidebarMenu";
+import Intro from "./Intro";
 
 // Type definitions for menu items
 export interface MenuItem {
@@ -71,6 +72,7 @@ export const MENU_ITEMS: ParentMenuItem[] = [
 const Sidebar: React.FC = () => {
   return (
     <div className="side-nav">
+      <Intro />
       {MENU_ITEMS.map((parent) => (
         <SidebarMenu key={parent.path} parent={parent} />
       ))}
