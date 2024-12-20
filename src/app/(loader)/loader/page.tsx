@@ -2,20 +2,13 @@
 
 import { useState } from "react";
 import "./style.css";
+import { downloadFile } from "@/components/fetchFunc";
 
 const Page = () => {
   const [message, setMessage] = useState("");
 
   const checkLicenseKey = async (key: string) => {
-    // user key LWAY-Tn3IXf
-    const requestOptions = {
-      method: "GET",
-      redirect: "follow" as RequestRedirect,
-    };
-    await fetch(
-      `https://keyauth.win/api/seller/?sellerkey=${process.env.NEXT_PUBLIC_SELLER_KEY}&type=userdata&user=${key}`,
-      requestOptions
-    )
+    await downloadFile(key)
       .then((response) => response.text())
       .then((result) => {
         const data = JSON.parse(result);

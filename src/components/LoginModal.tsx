@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import "./login.css";
+import { fetchLicenseVerification } from "./fetchFunc";
 
 const LoginModal = () => {
   const [error, setError] = useState("");
@@ -10,12 +11,7 @@ const LoginModal = () => {
   const handleClick = async () => {
     try {
       // TestKey-848AzL
-      const response = await fetch(
-        `https://keyauth.win/api/seller/?sellerkey=${process.env.NEXT_PUBLIC_SELLER_KEY}&type=verify&key=${encodeURIComponent(
-          licenseKey
-        )}`
-      );
-      const data = await response.json();
+      const data = await fetchLicenseVerification(licenseKey);
       // const data =
       //   licenseKey === "testapi"
       //     ? { success: true }

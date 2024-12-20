@@ -28,7 +28,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <body className={`${kanit.variable} ${geistMono.variable} antialiased`}>
@@ -38,7 +37,7 @@ export default function RootLayout({
           <div className="red-shadow"></div>
           <div className="content" id="content-area">
             {children}
-           <ScrollBtns />
+            <ScrollBtns />
           </div>
         </div>
         <div className="night-sky" id="sky"></div>
