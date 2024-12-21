@@ -15,14 +15,6 @@ const Header = () => {
             />
             <div className="perm-guide">Perm Guide</div>
           </div>
-          <div>
-            <a href="#" className="status">
-              Status
-            </a>
-            <a href="/loader" className="status ml-4">
-              Loader
-            </a>
-          </div>
         </div>
       </header>
       <div className="separator"></div>

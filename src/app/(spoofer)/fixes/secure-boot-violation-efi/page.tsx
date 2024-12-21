@@ -395,7 +395,7 @@ const page = () => {
       </div>
       <div className="next-prev">
         <Link
-          href="/fixes/getting-kicked-from-fortnite"
+          href="/3-spoof/after-spoofing"
           className="nav-button"
           id="prev-button"
         >

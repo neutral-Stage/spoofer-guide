@@ -214,7 +214,7 @@ const Page = () => {
           &larr; Previous
         </Link>
         <Link
-          href="/fixes/mac-not-changing"
+          href="/fixes/secure-boot-violation-efi"
           className="nav-button"
           id="next-button"
         >
