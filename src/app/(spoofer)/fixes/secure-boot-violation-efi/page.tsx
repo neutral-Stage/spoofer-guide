@@ -6,6 +6,13 @@ const page = () => {
       id="scrollableContent"
       className="flex-1 relative py-8 lg:px-12 break-anywhere page-api-block:xl:max-2xl:pr-0 page-api-block:max-w-[1654px] page-api-block:mx-auto"
     >
+      <Link
+        href="https://streamable.com/46qndv"
+        className="video-btn"
+        target="_blank"
+      >
+        Video
+      </Link>
       <header className="max-w-3xl mx-auto mb-6 space-y-3 page-api-block:ml-0">
         <nav>
           <ol className="flex flex-wrap items-center gap-2">

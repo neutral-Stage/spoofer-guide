@@ -488,3 +488,24 @@ svg.gb-icon {
     transparent calc(100% - 100% * 0.12)
   );
 }
+
+.video-btn {
+  position: absolute !important;
+  right: 6%;
+  top: 2rem;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.video-btn:hover {
+  background: #fd0606;
+  color: black;
+  box-shadow: 0 0 10px rgba(247, 85, 85, 0.563),
+    0 0 20px rgba(247, 85, 85, 0.316);
+}
