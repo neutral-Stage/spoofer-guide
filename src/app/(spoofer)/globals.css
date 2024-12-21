@@ -449,3 +449,42 @@ svg.gb-icon {
   box-shadow: 0 0 10px rgba(247, 85, 85, 0.563),
     0 0 20px rgba(247, 85, 85, 0.316);
 }
+
+.bg-red-500\/2 {
+  background-color: rgba(239, 68, 68, 0.08);
+}
+
+.border-red-500\/4 {
+  border-color: rgba(239, 68, 68, 0.16);
+}
+
+.bg-dark-1\/1 {
+  background-color: color-mix(
+    in srgb,
+    var(--dark-1),
+    transparent calc(100% - 100% * 0.04)
+  );
+}
+
+.border-dark\/3 {
+  border-color: color-mix(
+    in srgb,
+    var(--dark-DEFAULT),
+    transparent calc(100% - 100% * 0.12)
+  );
+}
+
+.dark\:bg-light\/1:is(.dark *) {
+  background-color: color-mix(
+    in srgb,
+    var(--light-DEFAULT),
+    transparent calc(100% - 100% * 0.04)
+  );
+}
+.dark\:border-light\/3:is(.dark *) {
+  border-color: color-mix(
+    in srgb,
+    var(--light-DEFAULT),
+    transparent calc(100% - 100% * 0.12)
+  );
+}

@@ -49,7 +49,7 @@ const page = () => {
           id="disable-hidden-devices"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#disable-hidden-devices"
               aria-label="Direct link to heading"
@@ -65,7 +65,7 @@ const page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             Disable Hidden Devices
           </div>
@@ -153,7 +153,7 @@ const page = () => {
           id="change-adapter-properties"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#change-adapter-properties"
               aria-label="Direct link to heading"
@@ -169,7 +169,7 @@ const page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             Change adapter properties
           </div>
@@ -401,7 +401,7 @@ const page = () => {
           id="disable-unused-network-adapters"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#disable-unused-network-adapters"
               aria-label="Direct link to heading"
@@ -417,7 +417,7 @@ const page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             Disable Unused Network Adapters
           </div>
@@ -584,7 +584,7 @@ const page = () => {
           id="disabling-bluetooth"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#disabling-bluetooth"
               aria-label="Direct link to heading"
@@ -600,7 +600,7 @@ const page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             Disabling Bluetooth
           </div>
@@ -682,7 +682,7 @@ const page = () => {
           id="change-monitor-serials"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#change-monitor-serials"
               aria-label="Direct link to heading"
@@ -698,7 +698,7 @@ const page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             Change Monitor Serials
           </div>

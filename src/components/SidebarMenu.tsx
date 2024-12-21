@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import { ChevronRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { type ParentMenuItem } from "./Sidebar";
+import { type MenuItem } from "./Sidebar";
+import SidebarSubmenu from "./SidebarSubmenu";
 
-const SidebarMenu = ({ parent }: { parent: ParentMenuItem }) => {
+const SidebarMenu = ({ parent }: { parent: MenuItem }) => {
   const pathname = usePathname();
   const [subMenuOpen, setSubMenuOpen] = useState(
     pathname.includes(parent.path) ? true : false
@@ -42,22 +43,24 @@ const SidebarMenu = ({ parent }: { parent: ParentMenuItem }) => {
               ${subMenuOpen ? "max-h-screen" : "max-h-0"}
             `}
       >
-        {parent.children.map((child) => (
-          <Link
-            key={child.path}
-            href={child.path}
-            className={`
-                  block p-3 pl-6 
-                  ${
-                    pathname === child.path
-                      ? "text-primary"
-                      : "text-gray-400 hover:text-primary"
-                  }
-                `}
-          >
-            {child.title}
-          </Link>
-        ))}
+        {parent &&
+          parent?.children?.map((child) => {
+            if (child.children) {
+              return <SidebarSubmenu key={child.path} parent={child} />;
+            } else {
+              return (
+                <Link
+                  key={child.path}
+                  href={child.path}
+                  className={`block py-2 pl-8 hover:text-primary ${
+                    pathname === child.path ? "text-primary" : "text-gray-200"
+                  }`}
+                >
+                  {child.title}
+                </Link>
+              );
+            }
+          })}
       </div>
     </div>
   );

@@ -1,11 +1,12 @@
-'use client';
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
 
 const Page = () => {
   const [tab, setTab] = useState(0);
-  const isActive = (index: number) => (tab === index ? "active-tab bg-primary/50" : "");
+  const isActive = (index: number) =>
+    tab === index ? "active-tab bg-primary/50" : "";
 
   return (
     <main
@@ -158,35 +159,15 @@ const Page = () => {
             className={`p-4 ${tab === 0 ? "" : "hidden"}`}
           >
             <div className="w-full space-y-4">
-              <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
-                <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
-                    <div
-                      className="before:font-var before:content-[--pseudoBefore--content]"
-                      style={{
-                        "--pseudoBefore--content": "'1.'",
-                        "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
-                      }}
-                    />
-                  </div>
-                  <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      Leave <strong className="font-bold">Normal Spoof</strong>{" "}
-                      enabled
-                    </p>
-                  </div>
-                </li>
-              </ol>
               <div className="hint p-4 transition-colors rounded-md straight-corners:rounded-none bg-dark-1/1 border-dark/3 dark:bg-light/1 dark:border-light/3 [&_.can-override-bg]:bg-dark-1/2 [&_.can-override-text]:text-dark dark:[&_.can-override-bg]:bg-light/2 dark:[&_.can-override-text]:text-light w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <div className="flex flex-row">
                   <svg
                     className="gb-icon size-5 mr-4 mt-0.5 leading-normal text-primary-500 dark:text-primary-400"
                     style={{
-                      maskImage:
-                        "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/circle-info.svg?v=2&token=a463935e93')",
-                      maskRepeat: "no-repeat",
-                      maskPosition: "center center",
+                      "mask-image":
+                        'url("https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/circle-info.svg?v=2&token=a463935e93")',
+                      "mask-repeat": "no-repeat",
+                      "mask-position": "center center",
                     }}
                   />
                   <div className="flex-1 space-y-4 [&_.hint]:border [&_pre]:border">
@@ -202,35 +183,18 @@ const Page = () => {
               </div>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
-                        "--pseudoBefore--content": "'2.'",
+                        "--pseudoBefore--content": "'1.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      <strong className="font-bold">Save Config</strong>
-                    </p>
-                  </div>
-                </li>
-                <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
-                    <div
-                      className="before:font-var before:content-[--pseudoBefore--content]"
-                      style={{
-                        "--pseudoBefore--content": "'3.'",
-                        "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
-                      }}
-                    />
-                  </div>
-                  <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       Press <strong className="font-bold">UEFI Spoof</strong>
                     </p>
                   </div>
@@ -242,39 +206,30 @@ const Page = () => {
                     alt=""
                     fetchPriority="high"
                     className="block"
-                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=768&dpr=4&quality=100&sign=d4839c16&sv=2"
-                    srcSet="
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=400&dpr=1&quality=100&sign=d4839c16&sv=2  400w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=400&dpr=2&quality=100&sign=d4839c16&sv=2  800w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=400&dpr=3&quality=100&sign=d4839c16&sv=2 1200w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=400&dpr=4&quality=100&sign=d4839c16&sv=2 1600w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=768&dpr=1&quality=100&sign=d4839c16&sv=2  768w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=768&dpr=2&quality=100&sign=d4839c16&sv=2 1536w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=768&dpr=3&quality=100&sign=d4839c16&sv=2 2304w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FQ2Z0EwSZAiXFmKKJFDTh%252FUEFI.jpg%3Falt%3Dmedia%26token%3Daec203b4-6c2b-4b28-a4ab-022e46e890ee&width=768&dpr=4&quality=100&sign=d4839c16&sv=2 3072w
-          "
+                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=768&dpr=4&quality=100&sign=eee5cf42&sv=2"
+                    srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=400&dpr=1&quality=100&sign=eee5cf42&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=400&dpr=2&quality=100&sign=eee5cf42&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=400&dpr=3&quality=100&sign=eee5cf42&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=400&dpr=4&quality=100&sign=eee5cf42&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=768&dpr=1&quality=100&sign=eee5cf42&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=768&dpr=2&quality=100&sign=eee5cf42&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=768&dpr=3&quality=100&sign=eee5cf42&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL5J54LTavGcK5N19hILm%252Ffirst.png%3Falt%3Dmedia%26token%3D3088c732-314c-458a-a314-94542a350a4e&width=768&dpr=4&quality=100&sign=eee5cf42&sv=2 3072w"
                     sizes="(max-width: 640px) 400px, 768px"
-                    width={694}
-                    height={474}
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    width={700}
+                    height={478}
+                    style={{ "max-width": "100%", height: "auto" }}
                   />
                 </div>
               </div>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
-                        "--pseudoBefore--content": "'4.'",
+                        "--pseudoBefore--content": "'2.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      Choose your motherboard and click
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
+                      Choose your motherboard and click{" "}
                       <strong className="font-bold">
                         Spoof (if you are a different motherboard press other)
                       </strong>
@@ -289,21 +244,12 @@ const Page = () => {
                     loading="lazy"
                     fetchPriority="low"
                     className="block"
-                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=768&dpr=4&quality=100&sign=e681d270&sv=2"
-                    srcSet="
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=400&dpr=1&quality=100&sign=e681d270&sv=2  400w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=400&dpr=2&quality=100&sign=e681d270&sv=2  800w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=400&dpr=3&quality=100&sign=e681d270&sv=2 1200w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=400&dpr=4&quality=100&sign=e681d270&sv=2 1600w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=768&dpr=1&quality=100&sign=e681d270&sv=2  768w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=768&dpr=2&quality=100&sign=e681d270&sv=2 1536w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=768&dpr=3&quality=100&sign=e681d270&sv=2 2304w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FYihnVWGQH9hs9D9WDVHb%252Fimage.png%3Falt%3Dmedia%26token%3Dc336467d-2a99-408f-aa87-0d0a720da3d5&width=768&dpr=4&quality=100&sign=e681d270&sv=2 3072w
-          "
+                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=768&dpr=4&quality=100&sign=bc669ec3&sv=2"
+                    srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=400&dpr=1&quality=100&sign=bc669ec3&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=400&dpr=2&quality=100&sign=bc669ec3&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=400&dpr=3&quality=100&sign=bc669ec3&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=400&dpr=4&quality=100&sign=bc669ec3&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=768&dpr=1&quality=100&sign=bc669ec3&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=768&dpr=2&quality=100&sign=bc669ec3&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=768&dpr=3&quality=100&sign=bc669ec3&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FaEU5RKDcvNDeQZCFuckz%252Fsecond.png%3Falt%3Dmedia%26token%3D29700300-c4ea-4ed9-9192-f0d172b8fc89&width=768&dpr=4&quality=100&sign=bc669ec3&sv=2 3072w"
                     sizes="(max-width: 640px) 400px, 768px"
-                    width={694}
-                    height={476}
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    width={689}
+                    height={470}
+                    style={{ "max-width": "100%", height: "auto" }}
                   />
                 </div>
               </div>
@@ -318,18 +264,18 @@ const Page = () => {
             <div className="w-full space-y-4">
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
                         "--pseudoBefore--content": "'1.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       Use the <strong className="font-bold">EFI </strong>method
                     </p>
                   </div>
@@ -340,10 +286,10 @@ const Page = () => {
                   <svg
                     className="gb-icon size-5 mr-4 mt-0.5 leading-normal text-primary-500 dark:text-primary-400"
                     style={{
-                      maskImage:
-                        "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/circle-info.svg?v=2&token=a463935e93')",
-                      maskRepeat: "no-repeat",
-                      maskPosition: "center center",
+                      "mask-image":
+                        'url("https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/circle-info.svg?v=2&token=a463935e93")',
+                      "mask-repeat": "no-repeat",
+                      "mask-position": "center center",
                     }}
                   />
                   <div className="flex-1 space-y-4 [&_.hint]:border [&_pre]:border">
@@ -359,35 +305,18 @@ const Page = () => {
               </div>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
                         "--pseudoBefore--content": "'2.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      Save Config
-                    </p>
-                  </div>
-                </li>
-                <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
-                    <div
-                      className="before:font-var before:content-[--pseudoBefore--content]"
-                      style={{
-                        "--pseudoBefore--content": "'3.'",
-                        "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
-                      }}
-                    />
-                  </div>
-                  <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       Click EFI Spoof
                     </p>
                   </div>
@@ -400,39 +329,30 @@ const Page = () => {
                     loading="lazy"
                     fetchPriority="low"
                     className="block"
-                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=768&dpr=4&quality=100&sign=294d1859&sv=2"
-                    srcSet="
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=400&dpr=1&quality=100&sign=294d1859&sv=2  400w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=400&dpr=2&quality=100&sign=294d1859&sv=2  800w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=400&dpr=3&quality=100&sign=294d1859&sv=2 1200w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=400&dpr=4&quality=100&sign=294d1859&sv=2 1600w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=768&dpr=1&quality=100&sign=294d1859&sv=2  768w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=768&dpr=2&quality=100&sign=294d1859&sv=2 1536w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=768&dpr=3&quality=100&sign=294d1859&sv=2 2304w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F4zmF6gk5q9vbgNwPiz6o%252FEFI.jpg%3Falt%3Dmedia%26token%3Dd6144361-22e4-4deb-8393-8db3df2d0989&width=768&dpr=4&quality=100&sign=294d1859&sv=2 3072w
-          "
+                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=768&dpr=4&quality=100&sign=fca29285&sv=2"
+                    srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=400&dpr=1&quality=100&sign=fca29285&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=400&dpr=2&quality=100&sign=fca29285&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=400&dpr=3&quality=100&sign=fca29285&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=400&dpr=4&quality=100&sign=fca29285&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=768&dpr=1&quality=100&sign=fca29285&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=768&dpr=2&quality=100&sign=fca29285&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=768&dpr=3&quality=100&sign=fca29285&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252Fua0JvaVkmy9mBwWIpg9g%252Ffourth.png%3Falt%3Dmedia%26token%3Dfbdefbfd-bcd3-42b3-a696-332026ab3ca5&width=768&dpr=4&quality=100&sign=fca29285&sv=2 3072w"
                     sizes="(max-width: 640px) 400px, 768px"
-                    width={692}
-                    height={474}
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    width={707}
+                    height={486}
+                    style={{ "max-width": "100%", height: "auto" }}
                   />
                 </div>
               </div>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
-                        "--pseudoBefore--content": "'4.'",
+                        "--pseudoBefore--content": "'2.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      Choose your motherboard and click
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
+                      Choose your motherboard and click{" "}
                       <strong className="font-bold">Spoof</strong>
                     </p>
                   </div>
@@ -445,24 +365,16 @@ const Page = () => {
                     loading="lazy"
                     fetchPriority="low"
                     className="block"
-                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=768&dpr=4&quality=100&sign=8f7ff16f&sv=2"
-                    srcSet="
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=400&dpr=1&quality=100&sign=8f7ff16f&sv=2  400w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=400&dpr=2&quality=100&sign=8f7ff16f&sv=2  800w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=400&dpr=3&quality=100&sign=8f7ff16f&sv=2 1200w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=400&dpr=4&quality=100&sign=8f7ff16f&sv=2 1600w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=768&dpr=1&quality=100&sign=8f7ff16f&sv=2  768w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=768&dpr=2&quality=100&sign=8f7ff16f&sv=2 1536w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=768&dpr=3&quality=100&sign=8f7ff16f&sv=2 2304w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F1w37c0YETOtcH3rvDBFP%252Fimage.png%3Falt%3Dmedia%26token%3D7521e69c-1bf4-416a-ac4c-e57538ea7b91&width=768&dpr=4&quality=100&sign=8f7ff16f&sv=2 3072w
-          "
+                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=768&dpr=4&quality=100&sign=5498eb4a&sv=2"
+                    srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=400&dpr=1&quality=100&sign=5498eb4a&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=400&dpr=2&quality=100&sign=5498eb4a&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=400&dpr=3&quality=100&sign=5498eb4a&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=400&dpr=4&quality=100&sign=5498eb4a&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=768&dpr=1&quality=100&sign=5498eb4a&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=768&dpr=2&quality=100&sign=5498eb4a&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=768&dpr=3&quality=100&sign=5498eb4a&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0iAWRcmtzlXgolcsTvzZ%252FEFISELECT.png%3Falt%3Dmedia%26token%3Dafde20aa-09ed-47f9-b3e4-16e9480bfd53&width=768&dpr=4&quality=100&sign=5498eb4a&sv=2 3072w"
                     sizes="(max-width: 640px) 400px, 768px"
-                    width={694}
-                    height={476}
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    width={284}
+                    height={326}
+                    style={{ "max-width": "100%", height: "auto" }}
                   />
                 </div>
               </div>
+              <p className="w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash" />
               <h2
                 id="download-winrar"
                 className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash"
@@ -476,10 +388,10 @@ const Page = () => {
                     <svg
                       className="gb-icon w-3.5 h-[1lh] transition-colors text-transparent group-hover:text-dark/6 dark:group-hover:text-light/5 lg:w-4"
                       style={{
-                        maskImage:
-                          "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&token=a463935e93')",
-                        maskRepeat: "no-repeat",
-                        maskPosition: "center center",
+                        "mask-image":
+                          'url("https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&token=a463935e93")',
+                        "mask-repeat": "no-repeat",
+                        "mask-position": "center center",
                       }}
                     />
                   </a>
@@ -509,10 +421,10 @@ const Page = () => {
                   <svg
                     className="gb-icon size-3 text-dark/7 transition-all group-hover:translate-x-0.5 group-hover:text-primary/8 dark:text-light/6"
                     style={{
-                      maskImage:
-                        "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/chevron-right.svg?v=2&token=a463935e93')",
-                      maskRepeat: "no-repeat",
-                      maskPosition: "center center",
+                      "mask-image":
+                        'url("https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/chevron-right.svg?v=2&token=a463935e93")',
+                      "mask-repeat": "no-repeat",
+                      "mask-position": "center center",
                     }}
                   />
                 </a>
@@ -530,10 +442,10 @@ const Page = () => {
                     <svg
                       className="gb-icon w-3.5 h-[1lh] transition-colors text-transparent group-hover:text-dark/6 dark:group-hover:text-light/5 lg:w-4"
                       style={{
-                        maskImage:
-                          "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&token=a463935e93')",
-                        maskRepeat: "no-repeat",
-                        maskPosition: "center center",
+                        "mask-image":
+                          'url("https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&token=a463935e93")',
+                        "mask-repeat": "no-repeat",
+                        "mask-position": "center center",
                       }}
                     />
                   </a>
@@ -544,18 +456,18 @@ const Page = () => {
               </h2>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
                         "--pseudoBefore--content": "'1.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       Format your drive partition as shown below:
                     </p>
                   </div>
@@ -570,7 +482,7 @@ const Page = () => {
                         width: "100%",
                         height: "0",
                         position: "relative",
-                        paddingBottom: "56.25%",
+                        "padding-bottom": "56.25%",
                       }}
                     >
                       <iframe
@@ -593,18 +505,18 @@ const Page = () => {
               </div>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
                         "--pseudoBefore--content": "'2.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       The required files will be placed on your Desktop
                       automatically:
                     </p>
@@ -619,54 +531,45 @@ const Page = () => {
                     fetchPriority="low"
                     className="block"
                     src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=4&quality=100&sign=d3f3e060&sv=2"
-                    srcSet="
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=1&quality=100&sign=d3f3e060&sv=2  400w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=2&quality=100&sign=d3f3e060&sv=2  800w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=3&quality=100&sign=d3f3e060&sv=2 1200w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=4&quality=100&sign=d3f3e060&sv=2 1600w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=1&quality=100&sign=d3f3e060&sv=2  768w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=2&quality=100&sign=d3f3e060&sv=2 1536w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=3&quality=100&sign=d3f3e060&sv=2 2304w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=4&quality=100&sign=d3f3e060&sv=2 3072w
-          "
+                    srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=1&quality=100&sign=d3f3e060&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=2&quality=100&sign=d3f3e060&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=3&quality=100&sign=d3f3e060&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=400&dpr=4&quality=100&sign=d3f3e060&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=1&quality=100&sign=d3f3e060&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=2&quality=100&sign=d3f3e060&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=3&quality=100&sign=d3f3e060&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FL4kGuVoxmgglo4PX55Jp%252Fimage.png%3Falt%3Dmedia%26token%3Db1acc5d4-0700-463d-ac71-9b275a1c97d6&width=768&dpr=4&quality=100&sign=d3f3e060&sv=2 3072w"
                     sizes="(max-width: 640px) 400px, 768px"
                     width={301}
                     height={141}
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    style={{ "max-width": "100%", height: "auto" }}
                   />
                 </div>
               </div>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
                         "--pseudoBefore--content": "'3.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       Extract efikit.rar using WinRAR
                     </p>
                   </div>
                 </li>
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
                         "--pseudoBefore--content": "'4.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       Drag startup.nsh into the extracted folder
                     </p>
                   </div>
@@ -681,7 +584,7 @@ const Page = () => {
                         width: "100%",
                         height: "0",
                         position: "relative",
-                        paddingBottom: "56.25%",
+                        "padding-bottom": "56.25%",
                       }}
                     >
                       <iframe
@@ -707,10 +610,10 @@ const Page = () => {
                   <svg
                     className="gb-icon size-5 mr-4 mt-0.5 leading-normal text-amber-500 dark:text-orange-400"
                     style={{
-                      maskImage:
-                        "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/circle-exclamation.svg?v=2&token=a463935e93')",
-                      maskRepeat: "no-repeat",
-                      maskPosition: "center center",
+                      "mask-image":
+                        'url("https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/circle-exclamation.svg?v=2&token=a463935e93")',
+                      "mask-repeat": "no-repeat",
+                      "mask-position": "center center",
                     }}
                   />
                   <div className="flex-1 space-y-4 [&_.hint]:border [&_pre]:border">
@@ -732,79 +635,23 @@ const Page = () => {
             <div className="w-full space-y-4">
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
                         "--pseudoBefore--content": "'1.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      Enable <strong className="font-bold">RAID0 Spoof</strong>
-                    </p>
-                  </div>
-                </li>
-                <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
-                    <div
-                      className="before:font-var before:content-[--pseudoBefore--content]"
-                      style={{
-                        "--pseudoBefore--content": "'2.'",
-                        "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
-                      }}
-                    />
-                  </div>
-                  <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      <strong className="font-bold">Save Config</strong>
-                    </p>
-                  </div>
-                </li>
-                <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
-                    <div
-                      className="before:font-var before:content-[--pseudoBefore--content]"
-                      style={{
-                        "--pseudoBefore--content": "'3.'",
-                        "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
-                      }}
-                    />
-                  </div>
-                  <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                       Press <strong className="font-bold">Regular Spoof</strong>
                     </p>
                   </div>
                 </li>
               </ol>
-              <div className="hint p-4 transition-colors rounded-md straight-corners:rounded-none bg-dark-1/1 border-dark/3 dark:bg-light/1 dark:border-light/3 [&_.can-override-bg]:bg-dark-1/2 [&_.can-override-text]:text-dark dark:[&_.can-override-bg]:bg-light/2 dark:[&_.can-override-text]:text-light w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
-                <div className="flex flex-row">
-                  <svg
-                    className="gb-icon size-5 mr-4 mt-0.5 leading-normal text-primary-500 dark:text-primary-400"
-                    style={{
-                      maskImage:
-                        "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/circle-info.svg?v=2&token=a463935e93')",
-                      maskRepeat: "no-repeat",
-                      maskPosition: "center center",
-                    }}
-                  />
-                  <div className="flex-1 space-y-4 [&_.hint]:border [&_pre]:border">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl [&_a]:text-primary-500 [&_a:hover]:text-primary-600 dark:[&_a]:text-primary-400 dark:[&_a:hover]:text-primary-300 flip-heading-hash">
-                      <strong className="font-bold">Enable </strong>GPU Spoofing
-                      for<span className="text-red-500"> </span>
-                      <span className="text-red-500">
-                        <strong className="font-bold">FiveM</strong>
-                      </span>
-                    </p>
-                  </div>
-                </div>
-              </div>
               <div className="w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash flex flex-row gap-3 justify-center">
                 <div className="relative overflow-hidden rounded straight-corners:rounded-none after:block after:absolute after:-inset-[0] after:border-dark/2 after:border after:rounded straight-corners:after:rounded-none dark:after:border-light/1 dark:after:mix-blend-plus-lighter after:pointer-events-none w-fit">
                   <img
@@ -812,39 +659,30 @@ const Page = () => {
                     loading="lazy"
                     fetchPriority="low"
                     className="block"
-                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=768&dpr=4&quality=100&sign=c1a7eb5c&sv=2"
-                    srcSet="
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=400&dpr=1&quality=100&sign=c1a7eb5c&sv=2  400w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=400&dpr=2&quality=100&sign=c1a7eb5c&sv=2  800w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=400&dpr=3&quality=100&sign=c1a7eb5c&sv=2 1200w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=400&dpr=4&quality=100&sign=c1a7eb5c&sv=2 1600w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=768&dpr=1&quality=100&sign=c1a7eb5c&sv=2  768w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=768&dpr=2&quality=100&sign=c1a7eb5c&sv=2 1536w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=768&dpr=3&quality=100&sign=c1a7eb5c&sv=2 2304w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F2fj0TzVi97BOsBc2LLVT%252FRAID0.png%3Falt%3Dmedia%26token%3D7341e51c-9095-41b0-8818-37d5a5dddb9f&width=768&dpr=4&quality=100&sign=c1a7eb5c&sv=2 3072w
-          "
+                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=768&dpr=4&quality=100&sign=87b142c4&sv=2"
+                    srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=400&dpr=1&quality=100&sign=87b142c4&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=400&dpr=2&quality=100&sign=87b142c4&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=400&dpr=3&quality=100&sign=87b142c4&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=400&dpr=4&quality=100&sign=87b142c4&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=768&dpr=1&quality=100&sign=87b142c4&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=768&dpr=2&quality=100&sign=87b142c4&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=768&dpr=3&quality=100&sign=87b142c4&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FlBE0hoV1niSvbawjPaX2%252Fimage.png%3Falt%3Dmedia%26token%3D2e1db147-b905-4605-b672-d11ee5d00e27&width=768&dpr=4&quality=100&sign=87b142c4&sv=2 3072w"
                     sizes="(max-width: 640px) 400px, 768px"
-                    width={693}
-                    height={472}
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    width={700}
+                    height={478}
+                    style={{ "max-width": "100%", height: "auto" }}
                   />
                 </div>
               </div>
               <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash">
                 <li className="leading-normal flex items-start">
-                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+                  <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
                     <div
                       className="before:font-var before:content-[--pseudoBefore--content]"
                       style={{
-                        "--pseudoBefore--content": "'4.'",
+                        "--pseudoBefore--content": "'2.'",
                         "--font-family": "inherit",
-                        fontSize: "min(1em, 24px)",
+                        "font-size": "min(1em, 24px)",
                       }}
                     />
                   </div>
                   <div className="space-y-2 flex flex-col flex-1">
-                    <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                      Choose your motherboard and click
+                    <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
+                      Choose your motherboard and click{" "}
                       <strong className="font-bold">Spoof</strong>
                     </p>
                   </div>
@@ -857,97 +695,134 @@ const Page = () => {
                     loading="lazy"
                     fetchPriority="low"
                     className="block"
-                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=768&dpr=4&quality=100&sign=ea52c4ba&sv=2"
-                    srcSet="
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=400&dpr=1&quality=100&sign=ea52c4ba&sv=2  400w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=400&dpr=2&quality=100&sign=ea52c4ba&sv=2  800w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=400&dpr=3&quality=100&sign=ea52c4ba&sv=2 1200w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=400&dpr=4&quality=100&sign=ea52c4ba&sv=2 1600w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=768&dpr=1&quality=100&sign=ea52c4ba&sv=2  768w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=768&dpr=2&quality=100&sign=ea52c4ba&sv=2 1536w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=768&dpr=3&quality=100&sign=ea52c4ba&sv=2 2304w,
-            https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FFmP4lI4lQ2Ir3JQqipGF%252Fimage.png%3Falt%3Dmedia%26token%3D63205dcc-fe29-4b81-9a20-32eeed539f2d&width=768&dpr=4&quality=100&sign=ea52c4ba&sv=2 3072w
-          "
+                    src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=768&dpr=4&quality=100&sign=854194bb&sv=2"
+                    srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=400&dpr=1&quality=100&sign=854194bb&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=400&dpr=2&quality=100&sign=854194bb&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=400&dpr=3&quality=100&sign=854194bb&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=400&dpr=4&quality=100&sign=854194bb&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=768&dpr=1&quality=100&sign=854194bb&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=768&dpr=2&quality=100&sign=854194bb&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=768&dpr=3&quality=100&sign=854194bb&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FjdXULFMsUtmpY1MkAUz3%252Fefsdfsdf.png%3Falt%3Dmedia%26token%3Dc8654a11-8b8f-47fb-84e8-0045f8f52fcf&width=768&dpr=4&quality=100&sign=854194bb&sv=2 3072w"
                     sizes="(max-width: 640px) 400px, 768px"
-                    width={694}
-                    height={476}
-                    style={{ maxWidth: "100%", height: "auto" }}
+                    width={689}
+                    height={470}
+                    style={{ "max-width": "100%", height: "auto" }}
                   />
                 </div>
               </div>
+              <p className="w-full mx-auto decoration-primary/6 max-w-3xl flip-heading-hash" />
             </div>
           </div>
         </div>
         <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
           <li className="leading-normal flex items-start">
-            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
               <div
                 className="before:font-var before:content-[--pseudoBefore--content]"
                 style={{
                   "--pseudoBefore--content": "'5.'",
                   "--font-family": "inherit",
-                  fontSize: "min(1em, 24px)",
+                  "font-size": "min(1em, 24px)",
                 }}
               />
             </div>
             <div className="space-y-2 flex flex-col flex-1">
-              <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+              <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                 Restart your PC
               </p>
             </div>
           </li>
           <li className="leading-normal flex items-start">
-            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
               <div
                 className="before:font-var before:content-[--pseudoBefore--content]"
                 style={{
                   "--pseudoBefore--content": "'6.'",
                   "--font-family": "inherit",
-                  fontSize: "min(1em, 24px)",
+                  "font-size": "min(1em, 24px)",
                 }}
               />
             </div>
             <div className="space-y-2 flex flex-col flex-1">
-              <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+              <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                 Run loader &amp; login
               </p>
             </div>
           </li>
           <li className="leading-normal flex items-start">
-            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
               <div
                 className="before:font-var before:content-[--pseudoBefore--content]"
                 style={{
                   "--pseudoBefore--content": "'7.'",
                   "--font-family": "inherit",
-                  fontSize: "min(1em, 24px)",
+                  "font-size": "min(1em, 24px)",
                 }}
               />
             </div>
             <div className="space-y-2 flex flex-col flex-1">
-              <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+              <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                 Click Serial Checker to compare your serials
               </p>
             </div>
           </li>
           <li className="leading-normal flex items-start">
-            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
               <div
                 className="before:font-var before:content-[--pseudoBefore--content]"
                 style={{
                   "--pseudoBefore--content": "'8.'",
                   "--font-family": "inherit",
-                  fontSize: "min(1em, 24px)",
+                  "font-size": "min(1em, 24px)",
                 }}
               />
             </div>
             <div className="space-y-2 flex flex-col flex-1">
-              <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+              <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                 Now do the Device Setup
               </p>
             </div>
           </li>
         </ol>
+        <p className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
+          <strong className="font-bold">
+            This is how it should look like if you used UEFI spoof (aka load
+            with driver)
+          </strong>
+        </p>
+        <div className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0 flex flex-row gap-3 justify-center">
+          <div className="relative overflow-hidden rounded straight-corners:rounded-none after:block after:absolute after:-inset-[0] after:border-dark/2 after:border after:rounded straight-corners:after:rounded-none dark:after:border-light/1 dark:after:mix-blend-plus-lighter after:pointer-events-none w-fit">
+            <img
+              alt=""
+              loading="lazy"
+              fetchPriority="low"
+              className="block"
+              src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=768&dpr=4&quality=100&sign=9d086d65&sv=2"
+              srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=400&dpr=1&quality=100&sign=9d086d65&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=400&dpr=2&quality=100&sign=9d086d65&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=400&dpr=3&quality=100&sign=9d086d65&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=400&dpr=4&quality=100&sign=9d086d65&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=768&dpr=1&quality=100&sign=9d086d65&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=768&dpr=2&quality=100&sign=9d086d65&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=768&dpr=3&quality=100&sign=9d086d65&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FR4l03jak2wpazb2WFdDt%252Fseventh.png%3Falt%3Dmedia%26token%3Ddadd7986-9461-4bcb-a240-4bb4e98b2dda&width=768&dpr=4&quality=100&sign=9d086d65&sv=2 3072w"
+              sizes="(max-width: 640px) 400px, 768px"
+              width={705}
+              height={481}
+              style={{ "max-width": "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+        <p className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
+          <strong className="font-bold">
+            This is how it should look if you don't load with a driver (aka load
+            without a driver or Regular spoof)
+          </strong>
+        </p>
+        <div className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0 flex flex-row gap-3 justify-center">
+          <div className="relative overflow-hidden rounded straight-corners:rounded-none after:block after:absolute after:-inset-[0] after:border-dark/2 after:border after:rounded straight-corners:after:rounded-none dark:after:border-light/1 dark:after:mix-blend-plus-lighter after:pointer-events-none w-fit">
+            <img
+              alt=""
+              loading="lazy"
+              fetchPriority="low"
+              className="block"
+              src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=768&dpr=4&quality=100&sign=95505f13&sv=2"
+              srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=400&dpr=1&quality=100&sign=95505f13&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=400&dpr=2&quality=100&sign=95505f13&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=400&dpr=3&quality=100&sign=95505f13&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=400&dpr=4&quality=100&sign=95505f13&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=768&dpr=1&quality=100&sign=95505f13&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=768&dpr=2&quality=100&sign=95505f13&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=768&dpr=3&quality=100&sign=95505f13&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F5qV8vFTiPBSkPcwWE4ww%252Fregularspoof.png%3Falt%3Dmedia%26token%3D00b12555-ff5c-445b-a646-7751621c7ba7&width=768&dpr=4&quality=100&sign=95505f13&sv=2 3072w"
+              sizes="(max-width: 640px) 400px, 768px"
+              width={693}
+              height={484}
+              style={{ "max-width": "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+        <p className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0" />
       </div>
       <div className="next-prev">
         <Link
@@ -958,7 +833,7 @@ const Page = () => {
           &larr; Previous
         </Link>
         <Link
-          href="/3-spoof/device-setup-required"
+          href="/3-spoof/spoof-hwid/hp-users"
           className="nav-button"
           id="next-button"
         >

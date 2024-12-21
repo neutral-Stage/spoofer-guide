@@ -49,7 +49,7 @@ const page = () => {
           id="install-iso"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#install-iso"
               aria-label="Direct link to heading"
@@ -65,7 +65,7 @@ const page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">Install ISO</div>
         </h2>
         <div className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0 relative overflow-hidden rounded straight-corners:rounded-none after:block after:absolute after:-inset-[0] after:border-dark/2 after:border after:rounded straight-corners:after:rounded-none dark:after:border-light/1 dark:after:mix-blend-plus-lighter after:pointer-events-none">

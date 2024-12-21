@@ -20,9 +20,9 @@ const page = () => {
     </header>
     <div className="[&>*+*]:mt-5 grid whitespace-pre-wrap">
       <h2 id="disable-windows-defender-manually" className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
-        <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+        {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
           <a href="#disable-windows-defender-manually" aria-label="Direct link to heading" className="inline-flex h-full items-start dark:text-light/3 dark:shadow-none dark:ring-0 leading-tight"><svg className="gb-icon w-3.5 h-[1lh] transition-colors text-transparent group-hover:text-dark/6 dark:group-hover:text-light/5 lg:w-4" style={{"maskImage":"url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&token=a463935e93')","maskRepeat":"no-repeat","maskPosition":"center center"}} /></a>
-        </div>
+        </div> */}
         <div className="grid-area-1-1 z-[1] mt-[1em]">
           Disable Windows Defender Manually
         </div>
@@ -62,9 +62,9 @@ const page = () => {
         </li>
       </ol>
       <h2 id="disable-windows-defender-with-dcontrol" className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
-        <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+        {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
           <a href="#disable-windows-defender-with-dcontrol" aria-label="Direct link to heading" className="inline-flex h-full items-start dark:text-light/3 dark:shadow-none dark:ring-0 leading-tight"><svg className="gb-icon w-3.5 h-[1lh] transition-colors text-transparent group-hover:text-dark/6 dark:group-hover:text-light/5 lg:w-4" style={{"maskImage":"url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&token=a463935e93')","maskRepeat":"no-repeat","maskPosition":"center center"}} /></a>
-        </div>
+        </div> */}
         <div className="grid-area-1-1 z-[1] mt-[1em]">
           Disable Windows Defender with dControl
         </div>

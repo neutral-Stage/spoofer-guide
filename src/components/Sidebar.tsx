@@ -7,14 +7,11 @@ import Intro from "./Intro";
 export interface MenuItem {
   title: string;
   path: string;
-}
-
-export interface ParentMenuItem extends MenuItem {
-  children: MenuItem[];
+  children?: MenuItem[];
 }
 
 // Move menu items outside the component to prevent re-creation on each render
-export const MENU_ITEMS: ParentMenuItem[] = [
+export const MENU_ITEMS: MenuItem[] = [
   {
     title: " 1# Windows Steps",
     path: "/1-windows-steps",
@@ -46,7 +43,16 @@ export const MENU_ITEMS: ParentMenuItem[] = [
     title: "3# Spoof",
     path: "/3-spoof",
     children: [
-      { title: "[1] Spoof HWID", path: "/3-spoof/spoof-hwid" },
+      {
+        title: "[1] Spoof HWID",
+        path: "/3-spoof/spoof-hwid",
+        children: [
+          {
+            title: "HP USERS",
+            path: "/3-spoof/spoof-hwid/hp-users",
+          },
+        ],
+      },
       { title: "[2] Device Setup 2", path: "/3-spoof/device-setup-required" },
       { title: "[3] After Spoofing", path: "/3-spoof/after-spoofing" },
     ],
@@ -55,11 +61,6 @@ export const MENU_ITEMS: ParentMenuItem[] = [
     title: "Fixes",
     path: "/fixes",
     children: [
-      { title: "[-] MAC Not Changing", path: "/fixes/mac-not-changing" },
-      {
-        title: "[-] Getting Kicked From Fortnite",
-        path: "/fixes/getting-kicked-from-fortnite",
-      },
       {
         title: "[-] Secure Boot Violation (EFI)",
         path: "/fixes/secure-boot-violation-efi",

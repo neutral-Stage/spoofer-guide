@@ -6,8 +6,10 @@ import { useState } from "react";
 const Page = () => {
   const [tab, setTab] = useState(0);
   const [tab2, setTab2] = useState(0);
-  const isActive = (index: number) => (tab === index ? "active-tab bg-primary/50" : "");
-  const isTabActive = (index: number) => (tab2 === index ? "active-tab bg-primary/50" : "");
+  const isActive = (index: number) =>
+    tab === index ? "active-tab bg-primary/50" : "";
+  const isTabActive = (index: number) =>
+    tab2 === index ? "active-tab bg-primary/50" : "";
   return (
     <main
       id="scrollableContent"
@@ -284,7 +286,7 @@ const Page = () => {
           id="enable-tpm"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#enable-tpm"
               aria-label="Direct link to heading"
@@ -300,7 +302,7 @@ const Page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">Enable TPM</div>
         </h2>
         <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
@@ -368,7 +370,7 @@ const Page = () => {
           id="turn-off-wifi-and-bluetooth-required"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#turn-off-wifi-and-bluetooth-required"
               aria-label="Direct link to heading"
@@ -384,7 +386,7 @@ const Page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             TURN OFF WIFI &amp; BLUETOOTH [REQUIRED]
           </div>
@@ -443,7 +445,7 @@ const Page = () => {
           id="disabling-virtualization"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#disabling-virtualization"
               aria-label="Direct link to heading"
@@ -459,7 +461,7 @@ const Page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             Disabling Virtualization
           </div>
@@ -617,7 +619,7 @@ const Page = () => {
           id="enable-secure-boot"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#enable-secure-boot"
               aria-label="Direct link to heading"
@@ -633,7 +635,7 @@ const Page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">Enable Secure Boot</div>
         </h2>
         <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
@@ -662,7 +664,7 @@ const Page = () => {
           id="disable-csm"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#disable-csm"
               aria-label="Direct link to heading"
@@ -678,7 +680,7 @@ const Page = () => {
                 }}
               />
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">Disable CSM</div>
         </h2>
         <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
@@ -707,96 +709,64 @@ const Page = () => {
           id="confirm-correct-settings"
           className="text-3xl font-semibold group relative grid w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0"
         >
-          <div className="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
+          {/* <div class="grid grid-area-1-1 relative -ml-6 w-7 border-0 opacity-0 group-hover:opacity-[0] group-focus:opacity-[0] md:group-hover:md:opacity-[1] md:group-focus:md:opacity-[1] mt-[1em]">
             <a
               href="#confirm-correct-settings"
               aria-label="Direct link to heading"
-              className="inline-flex h-full items-start dark:text-light/3 dark:shadow-none dark:ring-0 leading-tight"
+              class="inline-flex h-full items-start dark:text-light/3 dark:shadow-none dark:ring-0 leading-tight"
             >
               <svg
-                className="gb-icon w-3.5 h-[1lh] transition-colors text-transparent group-hover:text-dark/6 dark:group-hover:text-light/5 lg:w-4"
-                style={{
-                  maskImage:
-                    "url('https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&token=a463935e93')",
-                  maskRepeat: "no-repeat",
-                  maskPosition: "center center",
-                }}
-              />
+                class="gb-icon w-3.5 h-[1lh] transition-colors text-transparent group-hover:text-dark/6 dark:group-hover:text-light/5 lg:w-4"
+                style='mask-image: url("https://ka-p.fontawesome.com/releases/v6.6.0/svgs/regular/hashtag.svg?v=2&amp;token=a463935e93"); mask-repeat: no-repeat; mask-position: center center;'
+              ></svg>
             </a>
-          </div>
+          </div> */}
           <div className="grid-area-1-1 z-[1] mt-[1em]">
             Confirm Correct Settings
           </div>
         </h2>
         <ol className="space-y-2 w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0">
           <li className="leading-normal flex items-start">
-            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
               <div
                 className="before:font-var before:content-[--pseudoBefore--content]"
                 style={{
                   "--pseudoBefore--content": "'1.'",
                   "--font-family": "inherit",
-                  fontSize: "min(1em, 24px)",
+                  "font-size": "min(1em, 24px)",
                 }}
               />
             </div>
             <div className="space-y-2 flex flex-col flex-1">
-              <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
-                In windows, search for
+              <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
+                In Windows, search for{" "}
                 <strong className="font-bold">msinfo32</strong> and press Enter.
-                Check if the value for
-                <strong className="font-bold">Secure Boot State</strong> is
+                Check if the value for{" "}
+                <strong className="font-bold">Secure Boot State</strong> is{" "}
                 <strong className="font-bold">On</strong>
               </p>
             </div>
           </li>
           <li className="leading-normal flex items-start">
-            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark/6 dark:text-light/5">
+            <div className="text-base leading-normal flex items-center justify-center mr-1 min-h-[1lh] min-w-6 text-dark-4 dark:text-light-4">
               <div
                 className="before:font-var before:content-[--pseudoBefore--content]"
                 style={{
                   "--pseudoBefore--content": "'2.'",
                   "--font-family": "inherit",
-                  fontSize: "min(1em, 24px)",
+                  "font-size": "min(1em, 24px)",
                 }}
               />
             </div>
             <div className="space-y-2 flex flex-col flex-1">
-              <p className="w-full mx-auto decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0">
+              <p className="w-full decoration-primary/6 max-w-3xl min-h-[1lh] flip-heading-hash [&:is(h2)>div]:mt-0 [&:is(h3)>div]:mt-0 [&:is(h4)>div]:mt-0 mx-0">
                 Search for <strong className="font-bold">tpm.msc</strong> and
-                press Enter. It should say
-                <strong className="font-bold">
-                  The TPM is ready for use. - EAC TPM OFF
-                </strong>
+                press Enter. It should say{" "}
+                <strong className="font-bold">The TPM is not available</strong>
               </p>
             </div>
           </li>
         </ol>
-        <div className="w-full mx-auto decoration-primary/6 max-w-3xl page-api-block:ml-0 flex flex-row gap-3 justify-center">
-          <div className="relative overflow-hidden rounded straight-corners:rounded-none after:block after:absolute after:-inset-[0] after:border-dark/2 after:border after:rounded straight-corners:after:rounded-none dark:after:border-light/1 dark:after:mix-blend-plus-lighter after:pointer-events-none w-fit">
-            <img
-              alt=""
-              loading="lazy"
-              fetchPriority="low"
-              className="block"
-              src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=768&dpr=4&quality=100&sign=99161d0e&sv=2"
-              srcSet="
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=400&dpr=1&quality=100&sign=99161d0e&sv=2  400w,
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=400&dpr=2&quality=100&sign=99161d0e&sv=2  800w,
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=400&dpr=3&quality=100&sign=99161d0e&sv=2 1200w,
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=400&dpr=4&quality=100&sign=99161d0e&sv=2 1600w,
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=768&dpr=1&quality=100&sign=99161d0e&sv=2  768w,
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=768&dpr=2&quality=100&sign=99161d0e&sv=2 1536w,
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=768&dpr=3&quality=100&sign=99161d0e&sv=2 2304w,
-      https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252FyvrrgBc53WnBuLa0nREP%252Fimage.png%3Falt%3Dmedia%26token%3Dca182caf-2261-4c49-aaba-eddff701f12c&width=768&dpr=4&quality=100&sign=99161d0e&sv=2 3072w
-    "
-              sizes="(max-width: 640px) 400px, 768px"
-              width={768}
-              height={421}
-              style={{ maxWidth: "100%", height: "auto" }}
-            />
-          </div>
-        </div>
       </div>
       <div className="next-prev">
         <Link

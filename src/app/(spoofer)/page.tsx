@@ -25,7 +25,7 @@ const page = () => {
                 style={{
                   "--pseudoBefore--content": "'1.'",
                   "--font-family": "inherit",
-                  "font-size": "min(1em, 24px)",
+                  "fontSize": "min(1em, 24px)",
                 }}
               />
             </div>
@@ -40,14 +40,14 @@ const page = () => {
           <div className="relative overflow-hidden rounded straight-corners:rounded-none after:block after:absolute after:-inset-[0] after:border-dark/2 after:border after:rounded straight-corners:after:rounded-none dark:after:border-light/1 dark:after:mix-blend-plus-lighter after:pointer-events-none w-fit">
             <img
               alt=""
-              fetchpriority="high"
+              fetchPriority="high"
               className="block"
               src="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=768&dpr=4&quality=100&sign=4558d031&sv=2"
               srcSet="https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=400&dpr=1&quality=100&sign=4558d031&sv=2 400w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=400&dpr=2&quality=100&sign=4558d031&sv=2 800w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=400&dpr=3&quality=100&sign=4558d031&sv=2 1200w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=400&dpr=4&quality=100&sign=4558d031&sv=2 1600w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=768&dpr=1&quality=100&sign=4558d031&sv=2 768w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=768&dpr=2&quality=100&sign=4558d031&sv=2 1536w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=768&dpr=3&quality=100&sign=4558d031&sv=2 2304w, https://spoofer.gitbook.io/~gitbook/image?url=https%3A%2F%2F1747526905-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FIRlbgGEe6FZJRx7luQsK%252Fuploads%252F0XH44MhZ320JZ86HADFr%252Fkeyactive.png%3Falt%3Dmedia%26token%3Dcd4a56e7-affa-47c1-962a-90d12771148a&width=768&dpr=4&quality=100&sign=4558d031&sv=2 3072w"
               sizes="(max-width: 640px) 400px, 768px"
               width={439}
               height={117}
-              style={{ "max-width": "100%", height: "auto" }}
+              style={{ "maxWidth": "100%", height: "auto" }}
             />
           </div>
         </div>
